@@ -1,0 +1,16 @@
+@page
+@model EditModel
+
+<h1>Update Order Form</h1>
+<form method="post">
+    <div class="mt-3 card mb-3 p-3">
+        <input type="hidden" asp-for="Order.Id"/>
+        <input type="text" placeholder="Enter Name" class="form-control mb-3" asp-for="Order.CustomerName" />
+        <input type="text" placeholder="Enter Address" class="form-control mb-3" asp-for="Order.ProductName" />
+        <input type="date" class="form-control mb-3" asp-for="Order.OrderDate" />
+
+        
+        <button type="submit" class="btn btn-primary w-100">Update</button>
+    </div>
+</form>
+
